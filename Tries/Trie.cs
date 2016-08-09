@@ -11,7 +11,7 @@ namespace Tries
 
         public void Add(string word)
         {
-            AddRecursively(root, word, 0);
+            AddRecursively(root, word.ToLower(), 0);
         }
 
         private void AddRecursively(TrieNode trieNode, string word, int index)
@@ -36,6 +36,7 @@ namespace Tries
             if (word.Length - 1 == index)
             {
                 trieNode.ChildNodes[character].Value = word;
+                Count++;
                 return;
             }
 

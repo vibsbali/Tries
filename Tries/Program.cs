@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            var 
+            var dictionary = new Trie();
+
+            dictionary.Add("a");
+            dictionary.Add("an");
+            dictionary.Add("and");
+            dictionary.Add("bravo");
         }
     }
 }
